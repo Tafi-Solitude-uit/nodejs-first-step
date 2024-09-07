@@ -1,0 +1,26 @@
+{
+  "name": "fisrt-step",
+  "version": "1.0.0",
+  "description": "HelloWorld",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tafi-Solitude-uit/nodejs-first-step.git"
+  },
+  "keywords": [
+    "nodejs",
+    "first-step"
+  ],
+  "author": "anhtai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tafi-Solitude-uit/nodejs-first-step/issues"
+  },
+  "homepage": "https://github.com/Tafi-Solitude-uit/nodejs-first-step#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
