@@ -4,6 +4,7 @@
   "description": "HelloWorld",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon --inspect-brk index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,5 +23,8 @@
   "homepage": "https://github.com/Tafi-Solitude-uit/nodejs-first-step#readme",
   "dependencies": {
     "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
   }
 }
