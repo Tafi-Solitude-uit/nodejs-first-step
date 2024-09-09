@@ -1,21 +1,19 @@
 const path = require('path');
 const express = require('express');
 const morgan = require('morgan');
-const handlebar = require('express-handlebars');
+const hbs = require('express-handlebars');
 const app = express();
 const port = 3000;
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-//Http logger
+// Http logger
 app.use(morgan('combined'));
 
-//template engine
-app.engine('hbs', handlebar.engine({
+// template engine
+app.engine('hbs', hbs.engine({
   extname: '.hbs',
-  defaultLayout: 'main',
-  layoutsDir: path.join(__dirname, 'resources/views/layouts'),
-  partialsDir: path.join(__dirname, 'resources/views/partials') // Đảm bảo đường dẫn này chính xác
+  partialsDir: path.join(__dirname, 'resources/views/partials')
 }));
 
 app.set('view engine', 'hbs');
